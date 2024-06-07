@@ -1,17 +1,11 @@
+//这个是整个项目的入口
+//React必要的两个核心包
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+//导入根组件
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+//渲染到一个id为root的html中，即public下的index.html
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
